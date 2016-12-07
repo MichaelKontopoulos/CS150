@@ -37,13 +37,13 @@ void group(int x,int y,int width,int height){
             rectangle *rc=(rectangle*)tmp;
             if((tmp->x>=x)&&(tmp->x+rc->width<=x+width)&&(tmp->y>=y)&&(tmp->y+rc->height<=y+height))
                temp->mixalhs.push_back(*tmp);
-                //cout<< "mphka2" <<endl;
+              
         }
         else if(stricmp(tmp->Shape,"circle")==0){
             circle *cr=(circle*)tmp;
             if ( tmp->x-cr->radius>=x && tmp->y+cr->radius<=y+height && tmp->x+cr->radius <= x+width)
               temp-> mixalhs.push_back(*tmp);
-                //cout<< "mphka3" <<endl;
+                
         }
 
         tmp=tmp->next;
