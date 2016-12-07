@@ -32,6 +32,7 @@ void group(int x,int y,int width,int height){
             
                 //mixalhs.push_back(*tmp);
                 //cout<<temp->mixalhs.at(0).r<<endl;
+				//cout<<"manwlis";
         }
         else if(stricmp(tmp->Shape,"rectangle")==0){
             rectangle *rc=(rectangle*)tmp;
